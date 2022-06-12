@@ -1,0 +1,39 @@
+<h2>Cooperate Sign Only</h2>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <label for="">
+        {{ form.name.label }}
+    </label>
+    {{ form.name }}
+    <label for="">
+        {{ form.username.label }}
+    </label>
+    {{ form.username }}
+
+    <label for="">
+        {{ form.email.label }}
+    </label>
+    {{ form.email }}
+    
+
+    <label for="">
+        {{ form.password.label }}
+    </label>
+    {{ form.password }}
+    
+
+    <label for="">
+        {{ form.password2.label }}
+    </label>
+    {{ form.password2 }}
+    <div>
+        <!-- {{ director.as_p }} -->
+    </div>
+
+    <div>
+        <input type="submit" value="submit">
+    </div>
+    
+
+</form>
