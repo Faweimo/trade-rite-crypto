@@ -7,7 +7,7 @@
 {% endblock staticss %}
 
 {% block content %}
-
+	
 <div id="Log_In_Desktop">
 	<form action="" method="POST">
 		{% csrf_token %}	
@@ -106,7 +106,10 @@
 			<span>Welcome Back!</span>
 		</div>
 		<div id="Dont_have_an_account_Create_An">
-			<span>Don't have an account? </span><span style="color:rgba(7,154,109,1);">Create An Account</span>
+			<span>Don't have an account? </span>
+			<a href="{% url 'register' %}">
+				<span style="color:red;">Create An Account</span>
+			</a>
 		</div>
 </div>
 
@@ -117,9 +120,9 @@
       
 </form>
 
-<!-- <script id="applicationScript" type="text/javascript" src="login.js"></script> -->
+<!-- <script  type="text/javascript" src="login.js"></script> -->
 {% endblock content %}
 
 {% block script %}
-{% static "js/login.js" %}
+<script id="applicationScript" type="text/javascript" src="{% static 'js/login.js' %}"></script>
 {% endblock script %}

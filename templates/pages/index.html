@@ -1,79 +1,30 @@
-{% extends "shared/layout.html" %}
-{% load static %}
+                          {% extends "shared/layout.html" %}
+                          {% load static %}
 
-<!-- STATIC CSS FILES  -->
-{% block staticss %}
-<link rel="stylesheet" href="{% static 'css/_styles.css' %}">
-{% endblock staticss %}
-
-
-{% block content %} 
-
-<body data-aos="fade-up">
-  <header>
-    <div class="brand-logo">
-      <img src="{% static 'img/logo_no-bg.png' %}" alt="brand logo" />
-      <!-- <h2>Logo</h2> -->
-    </div>
-
-    <nav>
-      <ul>
-        <li >
-          <a href="#" class="active">
-            Home
-          </a>
-        </li>
-
-        <li>
-          <a href="#aboutus">
-            About us
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            Contact
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            Live Market
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            Blog
-          </a>
-        </li>
-
-        <li>
-          <a href="{% url 'login' %}"> Login</a>
-        </li>
-        <li>
-          <a href="#"> Get started</a>
-        </li>
-
-      </ul>
-    </nav>
+                          <!-- STATIC CSS FILES  -->
+                          {% block staticss %}
+                          <link rel="stylesheet" href="{% static 'css/_styles.css' %}">
+                          {% endblock staticss %}
 
 
-  </header>
-  <div class=e3_2>
-    <div class=e228_2509>
-      <div class="e20_6"></div>
+                          {% block content %} 
 
-      <div class="e3_3">
-        <!-- <H1>hahah</H1> -->
-       <!-- <img id="brand"  src="{% static 'img/DSC_7749-removebg-preview.png' %}" alt="" srcset=""> -->
-      </div>
+                          <!-- main content  -->
+                            {% include "partials/_header.html" %}
+                            <div class=e3_2>
+                              <div class=e228_2509>
+                                <div class="e20_6"></div>
 
-      <span class="e3_5">Buy and Sell Bitcoin
-        fast at the best market
-        price. </span>
-        <span class="e6_6">Get started with the easiest and most secure platform
-        to buy, sell, trade, and earn cryptocurrencies.</span>
+                                <div class="e3_3">
+                                  <!-- <H1>hahah</H1> -->
+                                <!-- <img id="brand"  src="{% static 'img/DSC_7749-removebg-preview.png' %}" alt="" srcset=""> -->
+                                </div>
+
+                                <span class="e3_5">Buy and Sell Bitcoin
+                                  with best market
+                                  rate!!!</span>
+                                  <span class="e6_6">Get started with the easiest and most secured platform
+                                  to buy & sell cryptocurrencies.</span>
 
       <!-- <a href="#"></a><span class="e7_7">Login</span></a>
 
@@ -95,11 +46,15 @@
       
     </div>
     <div class="wrapper">
-    <span class="e14_26">Everything you need in one place </span><span class="e47_85">Quick Exchange</span>
+    <span class="e14_26">Everything you need in one place </span>
+    
+    <!-- <span class="e47_85">Quick Exchange</span> -->
+
     <div class=e30_21>
-      <div class=e30_15><span class="e14_35">Swift Transaction </span><span class="e14_36"> Instantly buy/sell your crypto
-          and
-          withdraw externally in minutes.
+      <div class=e30_15><span class="e14_35">Swift Transaction </span>
+        
+        <span class="e14_36"> Buy/sell your crypto
+          with instant payment, on our secure and reliable platform
           
         </span>
         <div class=e30_18>
@@ -107,9 +62,9 @@
           <div class="e24_12"></div>
         </div>
       </div>
-      <div class=e30_16><span class="e17_2">Cheap Exchange Fee</span><span class="e17_3">Our exchange rate is the
-          cheapest
-          you’ll find out here.</span>
+      <div class=e30_16><span class="e17_2">No Hidden Charges</span><span class="e17_3">No transaction fee
+          and
+          commission apply.</span>
         <div class=e30_19>
           <div class="e30_14"></div>
           <div class="e27_7"></div>
@@ -123,21 +78,11 @@
       </div>
     </div>
   </div>
-    <div class=e47_82>
+    <!-- <div class=e47_82>
       <div class="e35_5"></div><span class="e44_62">Cryptocurrency rate will be updated in 00:45</span><span
         class="e37_22">Buy</span><span class="e44_38">You Receive</span><span class="e37_26">100,000</span><span
         class="e44_37">0.00077</span><span class="e37_32">NGN</span><span class="e44_40">BTC</span>
-      <!-- <div class=e47_89>
-        <div class="e44_56">
-          
-        </div>
-      </div> -->
-      <!-- <div class=e47_90>
-        <div class="e44_61"></div>
-      </div> -->
-      <!-- <div class=e47_91>
-        <div class="e44_57"></div>
-      </div> -->
+     
       <div class=e47_86>
         <div class="e43_35"></div>
         <div class=e47_88>
@@ -159,15 +104,20 @@
         <div class="e47_79"></div><span class="e47_80">Get Started </span>
       </div>
 
-    </div>
+    </div> -->
     <div class="container" >
       <div class="aboutus" >
         <h2>
           <a href="" id="aboutus"> 
             About Us
           </a>
+          
         </h2>
+      
       </div>
+      <p>
+        Trade-rite.ng is a Fintech company registered with Coperate Affairs Commission, we create a platform for buying and selling of all digital assets with a <br>faster and seamless technological innovation including excellence services on a secure and trusted platform so everyone to acheive financial freedom and inclusion.
+      </p>
     </div>
 
     <div class=e159_4679>
@@ -304,7 +254,6 @@
    </div>
   </footer> 
   </div>
-</body>
 
 
 {% endblock content %} 

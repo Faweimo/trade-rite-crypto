@@ -11,20 +11,20 @@
 
     <!-- CSS STATIC  -->
     
-    <!-- <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> -->
+    
 	
+    <!-- ANIMATION CSS / -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     {% block staticss %}
       
     {% endblock staticss %}
-
-    <!-- ANIMATION CSS / -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
 	<link rel="stylesheet" href="{% static 'css/_responsiveness.css' %}">
 
 </head>
-
-
+    <body >
+       
+        <!-- data-aos="fade-up" -->
     {% block content %}
       
     {% endblock content %}
@@ -32,7 +32,13 @@
     <!-- JAVASCRIPT STATIC  -->
 
 
-      
+    <script>
+        AOS.init({
+          offset:400,
+          duration:1000
+        });
+      </script> 
     {% block script %} {% endblock script %}
+
 </body>
 </html>

@@ -13,6 +13,39 @@ class RegistrationForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ('username', 'email','name')
+        widgets = {
+            'name':forms.TextInput(attrs={
+                'type':'text',
+                'autocomplete':'off',
+                'class':'person_surname',
+                'id':'person_surname',
+                
+            }),
+
+            'email':forms.EmailInput(attrs={
+                'type':'email',
+                'autocomplete':'off',
+                'class':'person_firstname',
+                'id':'person_surname',
+                
+            }),
+
+            'username':forms.TextInput(attrs={
+                'type':'text',
+                'autocomplete':'off',
+                'class':'person_firstname',
+                'id':'person_surname',
+                
+            }),
+            
+            'password':forms.PasswordInput(attrs={
+                'type':'password',
+                'autocomplete':'off',
+                'class':'person_psa',
+                'id':'psa',
+                
+            }),
+        }    
 
     def save(self,commit=True):
         user = super().save(commit=False)
@@ -53,6 +86,8 @@ class RegistrationForm(forms.ModelForm):
             {'class': 'form-control', 'placeholder': 'Repeat Password'})
         self.fields['name'].widget.attrs.update(
             {'class': 'form-control', 'placeholder': 'Enter Full name'})    
+
+
 
 
 """ LOGIN FORM """            

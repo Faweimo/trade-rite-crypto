@@ -28,7 +28,7 @@
 }
 
 
-    margin-top: -44px;
+    /* margin-top: -44px; */
 #password{
     /* margin-top: -44px; */
     margin-top: -35px;
@@ -85,4 +85,60 @@ button {
 #Rectangle_1725:hover {
     fill: white;
     color:black;
+}
+
+#Group_2281 {
+    display: none;
+}
+
+#Rectangle_1725 {
+    fill: #95cf5c;
+}
+
+#Log_In button[type="submit"] span{
+    text-align: center;
+    margin-left: -224px;
+    /* margin-top: 68px; */
+    position: absolute;
+    top: 6px;
+}
+
+#Dont_have_an_account_Create_An {
+    left: 534px;
+    top: 767px;
+}
+a{
+    text-decoration: none;
+}
+
+#Welcome_Back {
+    color: #95cf5c;
+}
+#By_joining_our_marketplace_you{
+    color:darkolivegreen;
+}
+
+#Email_address, #Password{
+    color: red;
+}
+
+
+.form-control {
+    color: green;
+    border: 1px solid green;
+}
+
+#Forgot_Password{
+    color:blue;
+}
+
+
+#Log_In_Desktop {
+    position: absolute;
+    width: 1348px;
+    height: 150vh;
+}
+
+#Rectangle_1725:hover{
+    background-color:red;
 }
